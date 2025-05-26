@@ -10,13 +10,11 @@ import os
 import sys
 import inspect
 
-# Set up paths
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, join(parent_dir, 'preprocess'))
 from data.preprocess import CSVPreProcess
 
-# Constants
 VIZ_ROOT = 'Plots'
 NUNIQUE_THRESHOLD = 20
 
@@ -26,7 +24,6 @@ def visualize_csv(csv, target_col=None, index_column=None, exclude_columns=[], s
                             index_column=index_column, 
                             exclude_columns=exclude_columns)
     
-    # Create tabs for different visualization categories
     tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([
         "📊 Correlation", "📈 Scatter Plots", "📉 Distributions", 
         "📦 Box/Violin Plots", "🥧 Composition", "📐 Regression", 
@@ -103,11 +100,11 @@ class CSVVisualize:
         if show:
             fig = None
             
-            if hasattr(plot, 'figure'):  # Seaborn plots
+            if hasattr(plot, 'figure'):  
                 fig = plot.figure
-            elif isinstance(plot, plt.Figure):  # Matplotlib figure
+            elif isinstance(plot, plt.Figure):  
                 fig = plot
-            elif hasattr(plot, 'fig'):  # Some objects have fig attribute
+            elif hasattr(plot, 'fig'):  
                 fig = plot.fig
             
             if fig is not None:
@@ -257,7 +254,6 @@ class CSVVisualize:
                 try:
                     st.caption(f"{cat_col} vs {num_col}")
                     
-                    # Use stripplot for large datasets, swarmplot for small ones
                     if len(self.df) > 100:
                         fig, ax = plt.subplots(figsize=(8, 5))
                         sns.stripplot(x=cat_col, y=num_col, data=self.df, 
@@ -276,11 +272,11 @@ class CSVVisualize:
 
     def plot_scatter_plot_matrix(self, hue_col_list=[], save=False, show=True):
         """Plot scatter plot matrix."""
-        for col in self.categorical_column_list[:3]:  # Limit to 3 hue variables
+        for col in self.categorical_column_list[:3]:  
             try:
                 st.subheader(f"Scatter Matrix (hue: {col})")
                 sns_plot = sns.pairplot(self.df, 
-                                       vars=self.continuous_column_list[:5],  # Limit columns
+                                       vars=self.continuous_column_list[:5],  
                                        hue=col, 
                                        plot_kws={'alpha':0.6, 's':20},
                                        height=2)
@@ -296,7 +292,7 @@ class CSVVisualize:
         for col in df_new.columns:
             try:
                 val_counts = df_new[col].value_counts()
-                if len(val_counts) > 10:  # Skip if too many categories
+                if len(val_counts) > 10:  
                     st.warning(f"Skipping pie chart for {col} - too many categories ({len(val_counts)})")
                     continue
                 
@@ -312,7 +308,7 @@ class CSVVisualize:
         """Plot histograms for numerical data."""
         df = self.get_filtered_dataframe(include_type=np.number)
         
-        for column in df.columns[:10]:  # Limit to first 10 columns
+        for column in df.columns[:10]:  
             try:
                 fig, ax = plt.subplots(figsize=(8, 5))
                 sns.histplot(df[column], kde=True, ax=ax)
@@ -328,7 +324,7 @@ class CSVVisualize:
             if self.df[col].shape[0] == self.df[col].unique().shape[0]:
                 xs.append(col)
         
-        for x in xs[:3]:  # Limit to 3 line charts
+        for x in xs[:3]:  
             try:
                 fig, ax = plt.subplots(figsize=(8, 5))
                 sns.lineplot(x=x, y=self.target_column, data=self.df, ax=ax)
@@ -358,7 +354,7 @@ class CSVVisualize:
         col_pairs = self.get_correlated_numerical_columns(min_absolute_coeff=0.5)
         col_pairs.extend(self.get_categorical_numerical_columns_pairs())
         
-        for x, y in col_pairs[:5]:  # Limit to 5 stem plots
+        for x, y in col_pairs[:5]:  
             try:
                 fig, ax = plt.subplots(figsize=(8, 5))
                 ax.stem(df_new[x], df_new[y], linefmt='grey', markerfmt='o', basefmt=' ')
@@ -373,8 +369,8 @@ class CSVVisualize:
         """Plot kernel density estimates."""
         col_names = self.numerical_column_list
         
-        for i in range(min(3, len(col_names))):  # Limit to 3 KDE plots
-            for j in range(i + 1, min(i + 4, len(col_names))):  # Limit combinations
+        for i in range(min(3, len(col_names))):  
+            for j in range(i + 1, min(i + 4, len(col_names))):  
                 try:
                     fig, ax = plt.subplots(figsize=(8, 5))
                     sns.kdeplot(data=self.df, x=col_names[i], y=col_names[j], 
@@ -389,7 +385,6 @@ def main():
     st.set_page_config(page_title="Data Visualizer", layout="wide")
     st.title("📊 Interactive Data Visualizer")
     
-    # File upload and configuration - moved to main page
     uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
     
     if uploaded_file is not None:
@@ -397,7 +392,6 @@ def main():
             df = pd.read_csv(uploaded_file)
             st.success("✅ File loaded successfully!")
             
-            # Configuration options in columns
             col1, col2, col3 = st.columns(3)
             
             with col1:
