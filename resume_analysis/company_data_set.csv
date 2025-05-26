@@ -1,0 +1,426 @@
+Company,Category,Scale
+Apple,Java Developer,80
+Apple,Testing,70
+Apple,DevOps Engineer,75
+Apple,Python Developer,80
+Apple,Web Designing,70
+Apple,HR,80
+Apple,Hadoop,60
+Apple,Blockchain,60
+Apple,ETL Developer,70
+Apple,Operations Manager,80
+Apple,Data Analyst,75
+Apple,Sales,80
+Apple,Mechanical Engineer,60
+Apple,Arts,75
+Apple,Database,80
+Apple,Electrical Engineering,70
+Apple,Health and fitness,75
+Apple,PMO,75
+Apple,Business Analyst,80
+Apple,DotNet Developer,70
+Apple,Automation Testing,75
+Apple,Network Security Engineer,70
+Apple,SAP Developer,80
+Apple,Civil Engineer,80
+Apple,Advocate,80
+Facebook,Java Developer,85
+Facebook,Testing,75
+Facebook,DevOps Engineer,80
+Facebook,Python Developer,85
+Facebook,Web Designing,75
+Facebook,HR,85
+Facebook,Hadoop,65
+Facebook,Blockchain,70
+Facebook,ETL Developer,75
+Facebook,Operations Manager,85
+Facebook,Data Analyst,80
+Facebook,Sales,85
+Facebook,Mechanical Engineer,65
+Facebook,Arts,80
+Facebook,Database,85
+Facebook,Electrical Engineering,75
+Facebook,Health and fitness,80
+Facebook,PMO,80
+Facebook,Business Analyst,85
+Facebook,DotNet Developer,75
+Facebook,Automation Testing,80
+Facebook,Network Security Engineer,75
+Facebook,SAP Developer,85
+Facebook,Civil Engineer,75
+Facebook,Advocate,85
+Tesla,Java Developer,90
+Tesla,Testing,80
+Tesla,DevOps Engineer,85
+Tesla,Python Developer,90
+Tesla,Web Designing,80
+Tesla,HR,90
+Tesla,Hadoop,70
+Tesla,Blockchain,75
+Tesla,ETL Developer,80
+Tesla,Operations Manager,90
+Tesla,Data Analyst,85
+Tesla,Sales,90
+Tesla,Mechanical Engineer,70
+Tesla,Arts,85
+Tesla,Database,90
+Tesla,Electrical Engineering,80
+Tesla,Health and fitness,85
+Tesla,PMO,85
+Tesla,Business Analyst,90
+Tesla,DotNet Developer,80
+Tesla,Automation Testing,85
+Tesla,Network Security Engineer,80
+Tesla,SAP Developer,90
+Tesla,Civil Engineer,90
+Tesla,Advocate,90
+Netflix,Java Developer,75
+Netflix,Testing,65
+Netflix,DevOps Engineer,70
+Netflix,Python Developer,75
+Netflix,Web Designing,65
+Netflix,HR,75
+Netflix,Hadoop,55
+Netflix,Blockchain,60
+Netflix,ETL Developer,65
+Netflix,Operations Manager,75
+Netflix,Data Analyst,70
+Netflix,Sales,75
+Netflix,Mechanical Engineer,55
+Netflix,Arts,70
+Netflix,Database,75
+Netflix,Electrical Engineering,65
+Netflix,Health and fitness,70
+Netflix,PMO,70
+Netflix,Business Analyst,75
+Netflix,DotNet Developer,65
+Netflix,Automation Testing,70
+Netflix,Network Security Engineer,65
+Netflix,SAP Developer,75
+Netflix,Civil Engineer,75
+Netflix,Advocate,75
+IBM,Java Developer,80
+IBM,Testing,70
+IBM,DevOps Engineer,75
+IBM,Python Developer,80
+IBM,Web Designing,70
+IBM,HR,80
+IBM,Hadoop,60
+IBM,Blockchain,65
+IBM,ETL Developer,70
+IBM,Operations Manager,80
+IBM,Data Analyst,75
+IBM,Sales,80
+IBM,Mechanical Engineer,60
+IBM,Arts,75
+IBM,Database,80
+IBM,Electrical Engineering,70
+IBM,Health and fitness,75
+IBM,PMO,75
+IBM,Business Analyst,80
+IBM,DotNet Developer,70
+IBM,Automation Testing,75
+IBM,Network Security Engineer,70
+IBM,SAP Developer,80
+IBM,Civil Engineer,80
+IBM,Advocate,80
+Samsung,Java Developer,85
+Samsung,Testing,75
+Samsung,DevOps Engineer,80
+Samsung,Python Developer,85
+Samsung,Web Designing,75
+Samsung,HR,85
+Samsung,Hadoop,65
+Samsung,Blockchain,70
+Samsung,ETL Developer,75
+Samsung,Operations Manager,85
+Samsung,Data Analyst,80
+Samsung,Sales,85
+Samsung,Mechanical Engineer,65
+Samsung,Arts,80
+Samsung,Database,85
+Samsung,Electrical Engineering,75
+Samsung,Health and fitness,80
+Samsung,PMO,80
+Samsung,Business Analyst,85
+Samsung,DotNet Developer,75
+Samsung,Automation Testing,80
+Samsung,Network Security Engineer,75
+Samsung,SAP Developer,85
+Samsung,Civil Engineer,85
+Samsung,Advocate,85
+Intel,Java Developer,85
+Intel,Testing,75
+Intel,DevOps Engineer,80
+Intel,Python Developer,85
+Intel,Web Designing,75
+Intel,HR,85
+Intel,Hadoop,65
+Intel,Blockchain,70
+Intel,ETL Developer,75
+Intel,Operations Manager,85
+Intel,Data Analyst,80
+Intel,Sales,85
+Intel,Mechanical Engineer,65
+Intel,Arts,80
+Intel,Database,85
+Intel,Electrical Engineering,75
+Intel,Health and fitness,80
+Intel,PMO,80
+Intel,Business Analyst,85
+Intel,DotNet Developer,75
+Intel,Automation Testing,80
+Intel,Network Security Engineer,75
+Intel,SAP Developer,85
+Intel,Civil Engineer,85
+Intel,Advocate,85
+Oracle,Java Developer,85
+Oracle,Testing,75
+Oracle,DevOps Engineer,80
+Oracle,Python Developer,85
+Oracle,Web Designing,75
+Oracle,HR,85
+Oracle,Hadoop,65
+Oracle,Blockchain,70
+Oracle,ETL Developer,75
+Oracle,Operations Manager,85
+Oracle,Data Analyst,80
+Oracle,Sales,85
+Oracle,Mechanical Engineer,65
+Oracle,Arts,80
+Oracle,Database,85
+Oracle,Electrical Engineering,75
+Oracle,Health and fitness,80
+Oracle,PMO,80
+Oracle,Business Analyst,85
+Oracle,DotNet Developer,75
+Oracle,Automation Testing,80
+Oracle,Network Security Engineer,75
+Oracle,SAP Developer,85
+Oracle,Civil Engineer,85
+Oracle,Advocate,85
+Cisco,Java Developer,85
+Cisco,Testing,75
+Cisco,DevOps Engineer,80
+Cisco,Python Developer,85
+Cisco,Web Designing,75
+Cisco,HR,85
+Cisco,Hadoop,65
+Cisco,Blockchain,70
+Cisco,ETL Developer,75
+Cisco,Operations Manager,85
+Cisco,Data Analyst,80
+Cisco,Sales,85
+Cisco,Mechanical Engineer,65
+Cisco,Arts,80
+Cisco,Database,85
+Cisco,Electrical Engineering,75
+Cisco,Health and fitness,80
+Cisco,PMO,80
+Cisco,Business Analyst,85
+Cisco,DotNet Developer,75
+Cisco,Automation Testing,80
+Cisco,Network Security Engineer,75
+Cisco,SAP Developer,85
+Cisco,Civil Engineer,85
+Cisco,Advocate,85
+Uber,Java Developer,80
+Uber,Testing,70
+Uber,DevOps Engineer,75
+Uber,Python Developer,80
+Uber,Web Designing,70
+Uber,HR,80
+Uber,Hadoop,60
+Uber,Blockchain,65
+Uber,ETL Developer,70
+Uber,Operations Manager,80
+Uber,Data Analyst,75
+Uber,Sales,80
+Uber,Mechanical Engineer,60
+Uber,Arts,75
+Uber,Database,80
+Uber,Electrical Engineering,70
+Uber,Health and fitness,75
+Uber,PMO,75
+Uber,Business Analyst,80
+Uber,DotNet Developer,70
+Uber,Automation Testing,75
+Uber,Network Security Engineer,70
+Uber,SAP Developer,80
+Uber,Civil Engineer,80
+Uber,Advocate,80
+Airbnb,Java Developer,80
+Airbnb,Testing,70
+Airbnb,DevOps Engineer,75
+Airbnb,Python Developer,80
+Airbnb,Web Designing,70
+Airbnb,HR,80
+Airbnb,Hadoop,60
+Airbnb,Blockchain,65
+Airbnb,ETL Developer,70
+Airbnb,Operations Manager,80
+Airbnb,Data Analyst,75
+Airbnb,Sales,80
+Airbnb,Mechanical Engineer,60
+Airbnb,Arts,75
+Airbnb,Database,80
+Airbnb,Electrical Engineering,70
+Airbnb,Health and fitness,75
+Airbnb,PMO,75
+Airbnb,Business Analyst,80
+Airbnb,DotNet Developer,70
+Airbnb,Automation Testing,75
+Airbnb,Network Security Engineer,70
+Airbnb,SAP Developer,80
+Airbnb,Civil Engineer,80
+Airbnb,Advocate,80
+Adobe,Java Developer,85
+Adobe,Testing,75
+Adobe,DevOps Engineer,80
+Adobe,Python Developer,85
+Adobe,Web Designing,75
+Adobe,HR,85
+Adobe,Hadoop,65
+Adobe,Blockchain,70
+Adobe,ETL Developer,75
+Adobe,Operations Manager,85
+Adobe,Data Analyst,80
+Adobe,Sales,85
+Adobe,Mechanical Engineer,65
+Adobe,Arts,80
+Adobe,Database,85
+Adobe,Electrical Engineering,75
+Adobe,Health and fitness,80
+Adobe,PMO,80
+Adobe,Business Analyst,85
+Adobe,DotNet Developer,75
+Adobe,Automation Testing,80
+Adobe,Network Security Engineer,75
+Adobe,SAP Developer,85
+Adobe,Civil Engineer,85
+Adobe,Advocate,85
+NVIDIA,Java Developer,85
+NVIDIA,Testing,75
+NVIDIA,DevOps Engineer,80
+NVIDIA,Python Developer,85
+NVIDIA,Web Designing,75
+NVIDIA,HR,85
+NVIDIA,Hadoop,65
+NVIDIA,Blockchain,70
+NVIDIA,ETL Developer,75
+NVIDIA,Operations Manager,85
+NVIDIA,Data Analyst,80
+NVIDIA,Sales,85
+NVIDIA,Mechanical Engineer,65
+NVIDIA,Arts,80
+NVIDIA,Database,85
+NVIDIA,Electrical Engineering,75
+NVIDIA,Health and fitness,80
+NVIDIA,PMO,80
+NVIDIA,Business Analyst,85
+NVIDIA,DotNet Developer,75
+NVIDIA,Automation Testing,80
+NVIDIA,Network Security Engineer,75
+NVIDIA,SAP Developer,85
+NVIDIA,Civil Engineer,85
+NVIDIA,Advocate,85
+Amazon,Java Developer,85
+Amazon,Testing,75
+Amazon,DevOps Engineer,80
+Amazon,Python Developer,85
+Amazon,Web Designing,75
+Amazon,HR,85
+Amazon,Hadoop,65
+Amazon,Blockchain,70
+Amazon,ETL Developer,75
+Amazon,Operations Manager,85
+Amazon,Data Analyst,80
+Amazon,Sales,85
+Amazon,Mechanical Engineer,65
+Amazon,Arts,80
+Amazon,Database,85
+Amazon,Electrical Engineering,75
+Amazon,Health and fitness,80
+Amazon,PMO,80
+Amazon,Business Analyst,85
+Amazon,DotNet Developer,75
+Amazon,Automation Testing,80
+Amazon,Network Security Engineer,75
+Amazon,SAP Developer,85
+Amazon,Civil Engineer,85
+Amazon,Advocate,85
+Google,Java Developer,90
+Google,Testing,80
+Google,DevOps Engineer,85
+Google,Python Developer,90
+Google,Web Designing,80
+Google,HR,90
+Google,Hadoop,70
+Google,Blockchain,75
+Google,ETL Developer,80
+Google,Operations Manager,90
+Google,Data Analyst,85
+Google,Sales,90
+Google,Mechanical Engineer,70
+Google,Arts,85
+Google,Database,90
+Google,Electrical Engineering,80
+Google,Health and fitness,85
+Google,PMO,85
+Google,Business Analyst,90
+Google,DotNet Developer,80
+Google,Automation Testing,85
+Google,Network Security Engineer,80
+Google,SAP Developer,90
+Google,Civil Engineer,90
+Google,Advocate,90
+MicroSoft,Java Developer,85
+MicroSoft,Testing,75
+MicroSoft,DevOps Engineer,80
+MicroSoft,Python Developer,85
+MicroSoft,Web Designing,75
+MicroSoft,HR,85
+MicroSoft,Hadoop,65
+MicroSoft,Blockchain,70
+MicroSoft,ETL Developer,75
+MicroSoft,Operations Manager,85
+MicroSoft,Data Analyst,80
+MicroSoft,Sales,85
+MicroSoft,Mechanical Engineer,65
+MicroSoft,Arts,80
+MicroSoft,Database,85
+MicroSoft,Electrical Engineering,75
+MicroSoft,Health and fitness,80
+MicroSoft,PMO,80
+MicroSoft,Business Analyst,85
+MicroSoft,DotNet Developer,75
+MicroSoft,Automation Testing,80
+MicroSoft,Network Security Engineer,75
+MicroSoft,SAP Developer,85
+MicroSoft,Civil Engineer,85
+MicroSoft,Advocate,85
+HP,Java Developer,80
+HP,Testing,70
+HP,DevOps Engineer,75
+HP,Python Developer,80
+HP,Web Designing,70
+HP,HR,80
+HP,Hadoop,60
+HP,Blockchain,65
+HP,ETL Developer,70
+HP,Operations Manager,80
+HP,Data Analyst,75
+HP,Sales,80
+HP,Mechanical Engineer,60
+HP,Arts,75
+HP,Database,80
+HP,Electrical Engineering,70
+HP,Health and fitness,75
+HP,PMO,75
+HP,Business Analyst,80
+HP,DotNet Developer,70
+HP,Automation Testing,75
+HP,Network Security Engineer,70
+HP,SAP Developer,80
+HP,Civil Engineer,80
+HP,Advocate,80
